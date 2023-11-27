@@ -14,7 +14,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
+    --main-color: #8b1414;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -204,6 +204,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     animation: professionRotate 13s ease-out infinite;
 }
 
