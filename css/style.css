@@ -137,6 +137,8 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
+    line-height: 60px;
+    margin-top: 20px;
 }
 
 .home-content p {
