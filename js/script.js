@@ -79,3 +79,17 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .certificates-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+/*========== captcha validation ==========*/
+const contactForm = document.querySelector('.contact form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        if (typeof grecaptcha !== 'undefined') {
+            const response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                e.preventDefault();
+                alert('Please complete the CAPTCHA before submitting.');
+            }
+        }
+    });
+}
