@@ -25,6 +25,10 @@ Este repositorio contiene el código fuente para el sitio web del portafolio de 
 - **Swiper**: Librería JavaScript para crear sliders/carousels.
 - **Boxicons**: Conjunto de iconos utilizados para redes sociales y servicios.
 
+## Optimización para Motores de Búsqueda (SEO)
+
+El sitio incorpora metadatos descriptivos y etiquetas Open Graph para mejorar la visibilidad en buscadores y redes sociales. Todas las imágenes incluyen atributos `alt` descriptivos para favorecer la accesibilidad y el posicionamiento.
+
 ## Uso y Contribución
 
 El código es público y puede ser utilizado o modificado. Para contribuir, hacer un fork, realizar cambios y enviar un pull request.
