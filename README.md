@@ -17,6 +17,7 @@ Este repositorio contiene el código fuente para el sitio web del portafolio de 
 - **Servicios (Services)**: Enumeración de servicios ofrecidos con descripciones breves.
 - **Portfolio**: Muestra proyectos con imágenes, títulos y descripciones.
 - **Contacto**: Formulario de contacto con campos para nombre, correo, teléfono, empresa y mensaje.
+- **Contacto**: Formulario de contacto que envía los datos de manera segura a través de HTTPS utilizando el servicio [Formspree](https://formspree.io/).
 - **Footer**: Información de derechos de autor y botón de regreso al inicio.
 
 ## Recursos Externos Utilizados
@@ -31,4 +32,8 @@ El código es público y puede ser utilizado o modificado. Para contribuir, hace
 *Nota: Se recomienda mantener actualizados los recursos externos utilizados en el código.*
 
 Para más detalles o mejoras en la documentación, contactar a Nehemías Mosqueda a través de los enlaces proporcionados en el sitio web.
+
+### Configurar el formulario de contacto
+
+El formulario utiliza Formspree para enviar los mensajes de forma segura. Si deseas recibir los correos en tu propia cuenta, registra un formulario en Formspree y actualiza el atributo `action` en `index.html` con el enlace proporcionado por el servicio.
 
