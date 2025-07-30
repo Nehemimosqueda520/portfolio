@@ -17,6 +17,7 @@
     --main-color: #8b1414;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
+    --wheel-speed: 16s;
 }
 
 *::selection {
@@ -209,32 +210,15 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: professionRotate 13s ease-out infinite;
+    will-change: transform;
+    animation: rotate360 var(--wheel-speed) linear infinite;
 }
 
-@keyframes professionRotate {
-
-    0%,
-    20% {
+@keyframes rotate360 {
+    from {
         transform: rotate(0deg);
     }
-
-    25%,
-    45% {
-        transform: rotate(-90deg);
-    }
-
-    50%,
-    70% {
-        transform: rotate(-180deg);
-    }
-
-    75%,
-    95% {
-        transform: rotate(-270deg);
-    }
-
-    100% {
+    to {
         transform: rotate(-360deg);
     }
 }
@@ -276,6 +260,7 @@ section {
     height: 560px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
+    box-shadow: 0 0 15px var(--main-color);
     z-index: -1;
 }
 
@@ -289,6 +274,7 @@ section {
     border-right: 384px solid var(--main-color);
     border-bottom: 50vh solid var(--main-color);
     border-left: 384px solid transparent;
+    opacity: .3;
 }
 
 .home-img img {
