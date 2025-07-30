@@ -37,3 +37,5 @@ Para más detalles o mejoras en la documentación, contactar a Nehemías Mosqued
 
 El formulario utiliza Formspree para enviar los mensajes de forma segura. Si deseas recibir los correos en tu propia cuenta, registra un formulario en Formspree y actualiza el atributo `action` en `index.html` con el enlace proporcionado por el servicio.
 
+Se ha incorporado Google reCAPTCHA para prevenir el spam. Registra tu dominio y reemplaza el valor de `data-sitekey` en `index.html` por tu clave de sitio.
+
