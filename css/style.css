@@ -398,6 +398,75 @@ span {
     list-style-type: disc;
 }
 
+.technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 7% 2rem;
+}
+
+.technologies {
+    min-height: auto;
+    padding-bottom: 10rem;
+}
+
+.technologies h2 {
+    margin-bottom: 5rem;
+}
+
+.technologies .technologies-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.technologies-container .technology-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    height: 25rem;
+}
+
+.technologies-container .technology-box:hover {
+     box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+    transition: .5s ease;
+}
+
+.technology-box:hover h3 {
+    color: var(--main-color);
+}
+
+.technology-box h3 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tech-icons i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.tech-icons svg {
+    width: 5rem;
+    height: 5rem;
+}
+
 .certificates {
     min-height: auto;
     padding-bottom: 10rem;
